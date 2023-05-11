@@ -1,0 +1,6 @@
+int f(object);
+class c
+  int f(object o)
+    return (-10) > 10
+  end;
+end;

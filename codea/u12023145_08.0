@@ -1,0 +1,8 @@
+int f(object);
+class c
+  int f(object o)
+    int a <- 40;
+    int b <- 50;
+    return a + b
+  end;
+end;

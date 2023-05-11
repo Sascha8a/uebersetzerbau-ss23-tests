@@ -1,0 +1,6 @@
+int f(object, int, int);
+class c
+  int f(object o, int a, int b)
+    return a * b
+  end;
+end;

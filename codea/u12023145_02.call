@@ -1,0 +1,3 @@
+struct objectc { struct mt *mtc; };
+extern struct mt { long (*sum)(struct objectc *, long, long); } c;
+RET(c.sum(0,1,1) == 2 && c.sum(0,2,2)==4);
