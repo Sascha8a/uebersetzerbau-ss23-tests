@@ -1,0 +1,9 @@
+int f(object);
+class c
+  int i;
+  int j;
+  int f(object o)
+    j <- 32;
+    return j
+  end;
+end;
