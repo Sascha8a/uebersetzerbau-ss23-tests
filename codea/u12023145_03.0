@@ -1,7 +1,11 @@
-int f(object);
+int sum(object,int,int);
+int sum2(object,int,int);
+
 class c
-  int f(object o)
-    int a <- 99;
-    return a
+  int sum(object o, int a, int b)
+    return a+b
+  end;
+  int sum2(object o, int a, int b)
+  return a+b
   end;
 end;

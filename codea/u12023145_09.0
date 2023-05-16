@@ -1,8 +1,0 @@
-int f(object);
-class c
-  int f(object o)
-    int a <- 10;
-    a <- (a + a) + (a + a); 
-    return a
-  end;
-end;

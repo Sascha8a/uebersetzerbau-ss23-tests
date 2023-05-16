@@ -1,8 +1,7 @@
-int f(object);
+object f(object);
+
 class c
-  int f(object o)
-    int a <- 1;
-    a <- 99;
-    return a
+  object f(object o)
+    return null
   end;
 end;

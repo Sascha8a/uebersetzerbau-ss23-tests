@@ -1,8 +1,0 @@
-int f(object, int);
-class c
-  int f(object o, int a)
-    a <- 4;
-
-    return a
-  end;
-end;

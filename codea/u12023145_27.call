@@ -1,4 +1,0 @@
-struct objectc { struct mt *mtc;};
-extern struct mt { long (*f)(struct objectc *); } c;
-struct objectc o={&c};
-RET(c.f(&o) == 2);
