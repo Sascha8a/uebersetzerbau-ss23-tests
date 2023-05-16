@@ -1,0 +1,11 @@
+int f(object, int);
+class c
+  int f(object o, int a)
+    cond
+      a # 10 -> a<-11; continue;
+      a # 10 -> a<-12; continue;
+    end;
+
+    return a
+  end;
+end;
