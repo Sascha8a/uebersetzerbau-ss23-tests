@@ -1,0 +1,12 @@
+int f(object);
+
+class cl
+	int f(object foo) 
+		int a <- 0;
+		cond
+			3 > a -> a <- a + 1; continue;
+		end;
+	
+		return a
+	end;
+end;

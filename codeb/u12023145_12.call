@@ -1,0 +1,29 @@
+struct cli { 
+    struct clft* clft;
+    long a;
+    long b;
+    struct cli* c;
+};
+
+extern struct clft { 
+    struct cli* (*f)(struct cli *);
+} cl;
+
+struct cli* c1 = cl.f(0);
+
+printf("DEBUG: a: %ld\n", c1->a);
+printf("DEBUG: b: %ld\n", c1->b);
+printf("DEBUG: c: %ld\n", c1->c);
+printf("DEBUG: cl: %ld\n", &cl);
+printf("DEBUG: cl.f: %ld\n", &cl.f);
+printf("DEBUG: c1->clft: %ld\n", c1->clft);
+printf("DEBUG: clft->f: %ld\n", &c1->clft->f);
+
+RET(
+    c1->clft != 0 &&
+    c1->a == 0 &&
+    c1->b == 0 &&
+    c1->c == 0 &&
+    &cl == c1->clft &&
+    &cl.f == &c1->clft->f
+);

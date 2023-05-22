@@ -1,0 +1,10 @@
+object f(object);
+
+class cl
+  int a;
+  int b;
+  object c;
+  object f(object o)
+    return new cl
+  end;
+end;
